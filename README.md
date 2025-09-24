@@ -27,8 +27,7 @@ setup:
         ```
     * Open the `.env` file and add your `PRIVATE_KEY` and any other required values.
 
-  Blockchain Assignment 3 Write-Up
-  Blockchain Assignment 3 Write-up
+Blockchain Assignment 3 Write-Up
 
 The contract inherits from ERC20Capped, so the maximum token supply is defined and set in the constructor upon deployment. The cap is immutably enforced by the mint function, and that is used by the mint and airdrop functions. For the pausable transfers, it’s inheriting from ERC20Pausable, and it causes it to get the ability to half all transfers in an emergency. It uses pause and unpause functions to trigger the function. For the access control roles, it uses AccessControl for a flexible and secure permissioning system. It uses MINTER_ROLE for creating new tokens and PAUSER_ROLE for managing the pausable state.
 
