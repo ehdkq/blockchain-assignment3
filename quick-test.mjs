@@ -1,0 +1,3 @@
+import { createPublicClient, http } from "viem"; const RPC_URL = process.env.RPC_URL || "https://hh-02.didlab.org"; const CHAIN_ID = 31338; const client = createPublicClient({ chain: { id: CHAIN_ID, name: "didlab-02", nativeCurrency: { name:"ETH", symbol:"ETH", decimals:18 }, rpcUrls: { default: { http: [RPC_URL] } } }, transport: http(RPC_URL), }); const id = await client.request({ method: "eth_chainId", params:
+
+[] }); console.log("chainId:", id);

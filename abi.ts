@@ -1,0 +1,10 @@
+export const myTokenABI = [
+  { "type": "constructor", "inputs": [{ "name": "name", "type": "string" }, { "name": "symbol", "type": "string" }, { "name": "cap", "type": "uint256" }, { "name": "initialReceiver", "type": "address" }, { "name": "initialMint", "type": "uint256" }], "stateMutability": "nonpayable" },
+  { "type": "function", "name": "allowance", "inputs": [{ "name": "owner", "type": "address" }, { "name": "spender", "type": "address" }], "outputs": [{ "name": "", "type": "uint256" }], "stateMutability": "view" },
+  { "type": "function", "name": "approve", "inputs": [{ "name": "spender", "type": "address" }, { "name": "value", "type": "uint256" }], "outputs": [{ "name": "", "type": "bool" }], "stateMutability": "nonpayable" },
+  { "type": "function", "name": "airdrop", "inputs": [{ "name": "to", "type": "address[]" }, { "name": "amounts", "type": "uint256[]" }], "outputs": [], "stateMutability": "nonpayable" },
+  { "type": "function", "name": "balanceOf", "inputs": [{ "name": "account", "type": "address" }], "outputs": [{ "name": "", "type": "uint256" }], "stateMutability": "view" },
+  { "type": "function", "name": "transfer", "inputs": [{ "name": "to", "type": "address" }, { "name": "value", "type": "uint256" }], "outputs": [{ "name": "", "type": "bool" }], "stateMutability": "nonpayable" },
+  { "type": "event", "name": "Approval", "inputs": [{ "name": "owner", "type": "address", "indexed": true }, { "name": "spender", "type": "address", "indexed": true }, { "name": "value", "type": "uint256", "indexed": false }], "anonymous": false },
+  { "type": "event", "name": "Transfer", "inputs": [{ "name": "from", "type": "address", "indexed": true }, { "name": "to", "type": "address", "indexed": true }, { "name": "value", "type": "uint256", "indexed": false }], "anonymous": false }
+] as const;
