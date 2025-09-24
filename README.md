@@ -1,3 +1,5 @@
+*Metamask transaction hash wouldn't let me screenshot, so I copied it and added it to the readme.md*
+
 RPC URL: `https://hh-02.didlab.org`
 Chain ID: `31338`
 Deployed Token Address: `0x5fbdb2315678afecb367f032d93f642f64180aa3`
