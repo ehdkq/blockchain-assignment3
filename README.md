@@ -1,3 +1,32 @@
+RPC URL: `https://hh-02.didlab.org`
+Chain ID: `31338`
+Deployed Token Address: `0x5fbdb2315678afecb367f032d93f642f64180aa3`
+transaction hash from metamask: 0x99d947c2161d9d8c964fe9df6674e256d93c4f3effb3a429ff9c90c59fb24a66
+
+deploy command: npx hardhat run scripts/deploy.ts --network didlab
+interact command: npx hardhat run scripts/interact.ts --network didlab
+gas-comparison command: npx hardhat run scripts/gas-comparison.ts --network didlab
+events command: npx hardhat run scripts/events.ts --network didlab
+
+setup:
+1.  **Clone the repository:**
+    ```bash
+    git clone <your-repository-url>
+    cd <your-repository-folder>
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure your environment:**
+    * Make a copy of the example environment file:
+        ```bash
+        cp .env.example .env
+        ```
+    * Open the `.env` file and add your `PRIVATE_KEY` and any other required values.
+
 # Sample Hardhat 3 Beta Project (`node:test` and `viem`)
 
 This project showcases a Hardhat 3 Beta project using the native Node.js test runner (`node:test`) and the `viem` library for Ethereum interactions.
